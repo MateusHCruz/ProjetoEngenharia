@@ -3,11 +3,9 @@
     let line2 = document.querySelector('.line-2');
     let menu = document.querySelector('#menu-burguer'); 
     let navAberta = document.querySelector('#navopen')
-    let body = document.querySelector('body')
+    let body = document.querySelector('html')
 
-    console.log('line1:', line1);
-    console.log('line2:', line2);
-    console.log('menu:', menu);
+
 
     
         menu.addEventListener("click", () => {  
