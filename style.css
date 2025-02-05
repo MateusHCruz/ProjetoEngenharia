@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserat';
+    
 }
 
 @font-face {
@@ -10,9 +11,6 @@
     src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
 
-html{
-    overflow-x: hidden;
-}
 
 
 section.secao-home{
@@ -145,11 +143,11 @@ section.secao-home{
 .nav-open{
     background-color: rgb(255, 255, 255);
   
-    opacity: 0;
+    visibility: hidden;
     overflow: hidden;
 
     width: 0;
-    height: 100vh;
+    height: 0;
 
     position: absolute;
     top: 0;
@@ -167,10 +165,11 @@ section.secao-home{
 }
 
 .navAbertaAtiva{
-    opacity: 1;
+    visibility: visible;
     overflow: visible;
 
     width: 80vw;
+    height: 100vh;
 }
 
 html.noscroll{
