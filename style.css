@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserat';
+}
+
+@font-face {
+    font-family: 'Montserat';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+html{
+    overflow-x: hidden;
+}
+
+section.secao-home{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.746), rgba(255, 255, 255, 0)) , url('Images/guindaste-introducao.jpg') ;
+    background-position: center center;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 1.5rem;
+}
+
+.icon-logo{
+    font-size: 2.6rem;
+    color: white;
+}
+
+.menu-burguer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    row-gap: .4rem;
+    
+    width: 4rem;
+
+    z-index: 100;
+}
+
+ div.line-1{
+    width: 40px;
+    height: 4px;
+
+    background-color: white;
+
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.line-1.ativo1{
+   transform: rotate(45deg)translate(19%);
+   width: 40px;
+   
+   background-color: #2B5279;
+}
+
+
+
+.line-2{
+    width: 30px;
+    height: 4px;
+    
+    background-color: white;
+
+    text-align: right;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.ativo2{
+    transform: rotate(-45deg) translate(19%);
+    width: 40px;
+
+    background-color: #2B5279;
+ }
+
+.nav-open{
+    background-color: rgb(255, 255, 255);
+  
+    opacity: 0;
+    overflow: hidden;
+
+    width: 0;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    padding: 1rem;
+    padding-left: 3rem;
+
+    transition: .5s ease-in-out;
+}
+
+.navAbertaAtiva{
+    opacity: 1;
+    overflow: visible;
+
+    width: 80vw;
+}
+
+.noscroll{
+    overflow-y: hiddenll;
+}
+
+.nav-open i{
+    font-size: 3.5rem;
+    color: #08325c;
+    
+    margin-bottom: 4rem;
+}
+
+.nav-open a{
+    text-decoration: none;
+    font-size: 1.7rem;
+
+    color:#2B5279;;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.nav-open a:hover{
+    color: #00315f;
+
+    transform: translate(0, -2px);
+}
+
+main.home-main{
+    position: relative;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+main.home-main h1{
+    color: white;
+    font-size: 48px;
+    font-weight:200;
+
+    line-height: 45px;
+}
+
+main.home-main h1 span{
+    display: block;
+
+    font-weight: bold;
+}
+
+main.home-main p{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+
+    width: 370px;
+}
+
+main.home-main button{
+    width: 210px;
+    height: 51px;
+
+    background-color: transparent;
+    border: 1px solid white;
+
+    color: white;
+
+    margin-top: 2rem;
+
+    
+}
+
+main.home-main button:hover{
+    color: black;
+     
+    background-color: white;
+
+    border: none;
+
+    transform: scale(1.05);
+    transform: translateY(-2px);
+    transition: .6s ease-in-out;
+}
