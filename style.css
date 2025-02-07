@@ -11,7 +11,10 @@
     src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
 
-
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
 
 section.secao-home{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.746), rgba(255, 255, 255, 0)) , url('Images/guindaste-introducao.jpg') ;
@@ -29,6 +32,7 @@ section.secao-home{
 
 
 .nav-bar{
+    
     width: 100vw;
     height: 10vh;
 
@@ -143,13 +147,13 @@ section.secao-home{
 .nav-open{
     background-color: rgb(255, 255, 255);
   
-    visibility: hidden;
-    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
 
     width: 0;
     height: 0;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right:0;
     z-index: 99;
@@ -161,13 +165,12 @@ section.secao-home{
     padding: 1rem;
     padding-left: 2rem;
 
-    transition: .5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .navAbertaAtiva{
-    visibility: visible;
-    overflow: visible;
-
+    transform: scaleY(1);
+    
     width: 80vw;
     height: 100vh;
 }
@@ -181,6 +184,8 @@ html.noscroll{
     color: #08325c;
     
     margin-bottom: 4rem;
+
+    position: fixed;
 }
 
 .nav-open a{
@@ -263,4 +268,74 @@ main.home-main button:hover{
 
 .secao-sobre{
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 2rem;
+
+    margin-top: 40px;
+    padding-inline: 30px;
+}
+
+.secao-sobre h3{
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #00315f;
+    
+    padding: 10px;
+
+    border-left: 3px solid #e09706;
+
+    
+}
+
+.secao-sobre h2{
+    font-size: 40px;
+    font-weight: 350;
+    color: #2B5279;
+}
+
+.secao-sobre h2 span{
+    display: block;
+
+    font-weight: bold;
+}
+
+.secao-sobre p{
+    font-size: 18px;
+
+    color: #525252;
+
+    padding-left: 25px;
+    padding-block: 15px;
+
+    border-left: 3px solid #e09706;
+
+}
+
+.secao-sobre p span{
+    display: block;
+
+    margin-top: 25px;
+    margin-bottom: 2px;
+}
+
+.secao-sobre .imagem-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.secao-sobre img{
+    width: 65vw;
+    height: 265px;
+
+    margin-top: 15px;
+    margin-bottom: 45px;
+
+    border-radius: 15px;
+
+    box-shadow: 15px 15px 0px #00315f;
 }
