@@ -11,7 +11,7 @@
     src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
 
-html{
+html, body{
     width: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -19,13 +19,14 @@ html{
 
 .container{
     width: 100%;
+    overflow-x: hidden;
 }
 
 section.secao-home{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.746), rgba(255, 255, 255, 0)) , url('Images/guindaste-introducao.jpg') ;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     height: 100vh;
     width: 100%;
@@ -99,14 +100,20 @@ section.secao-home{
     row-gap: .4rem;
     
     margin-left: auto;
-   padding: 5px;
+    padding: 5px;
 
     z-index: 999999;
     
-    top: 4%;
-    right: 6%;
+    margin-top: 30px;
+    margin-right: 20px;
 
     position: fixed;
+}
+
+.nav-bar, .menu-burguer{
+    left: 0;
+    right: 0;
+    max-width: 100%;
 }
 
  div.line-1{
@@ -336,8 +343,8 @@ main.home-main button:hover{
 }
 
 .secao-sobre img{
-    width: 65%;
-    height: 265px;
+    width: 70%;
+    height:100%;
 
     margin-top: 15px;
     margin-bottom: 45px;
