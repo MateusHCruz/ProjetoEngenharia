@@ -3,77 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engenharia</title>
-    <!-- CSS MOBILE-->
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 
-    <!--CSS DESKTOP-->
+  
+    <!--style desktop-->
+    <link rel="stylesheet" href="styledesktop.css">
 
-
-    <!--BIBILIOTECA ICONES-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!--LIB ANIMAÇÕES SCROLL-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
-    <!--ATIVAÇÃO AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
-    
-
-    <div class="container">
-        <section class="secao-home secao" id="home">
+    <div id="fullpage">
+        <div class="section home" id="home">
             <header class="nav-bar"  id="header">        
-                    <img src="Images/loog-branca.png" alt="" class="imagem-logo " id="branca">
-                    <img src="Images/loog-preta.png" alt=""  class="imagem-logo " id="azul">
-                   
-                   
-            </header>  
-            <div class="menu-burguer" id="menu-burguer">
-                <div class="line-1" id="linha1"></div>
-                <div class="line-2" id="linha2"></div>       
-            </div>
-            <div class="nav-open" id="navopen">
-                <img src="Images/loog-preta.png" alt=""  class="imagem-logo preta">
-                <a href="#home">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Portifólio</a>
-                <a href="#">Pagamento</a>
-                <a href="#">Contato</a>
-                
-            </div>
+                <img src="Images/loog-branca.png" alt="" class="imagem-logo " id="branca">
+                <ul class="nav-itens">
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#sobre">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#servicos">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="#">
+                        <li class="contato">contato</li>
+                    </a>
+                </ul>
+                <div class="icones-redes">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </header>
 
             <main class="home-main">
-                <h1 data-aos="fade-right" data-aos-duration="1000">REALIZE O SEU <span>SONHO</span></h1>
-                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Transformando desejos em realidade com inovação qualidade e  precisão.</p>
+                <h1>REALIZE O SEU <span>SONHO</span></h1>
+                <p>Transformando desejos em realidade com inovação qualidade e  precisão.</p>
                 <button class="button-home" id="btnhome">Quero conhecer</button>
             </main>
-        </section>
 
-        <section class="secao-sobre secao" id="sobre">
-            <h3>Quem somos?</h3>
-            <h2>EXCELÊNCIA NA <span>CONSTRUÇÃO CÍVIL</span></h2>
-            <p>A MH Engenharia é uma empresa de engenharia especializada em soluções inovadoras e eficientes para projetos de construção, infraestrutura e desenvolvimento sustentável. Com uma equipe altamente qualificada e comprometida, entregamos resultados que aliam tecnologia, segurança e excelência técnica.
-
-            <span>Nosso compromisso é transformar desafios em soluções inteligentes, garantindo qualidade, prazos e a máxima satisfação dos nossos clientes. Seja para projetos residenciais, comerciais ou industriais, estamos prontos para oferecer as melhores soluções em engenharia.</p></span>
-
-            <div class="imagem-sobre">
-                <img src="Images/obras-sobre.jpg" alt="Mulher em uma obra">
+        </div>
+        <div class="section sobre" id="sobre">
+            <div class="primario">
+                <div class="sobre-txt">
+                    <h3>Quem somos?</h3>
+                    <h2>EXCELÊNCIA NA <span>CONSTRUÇÃO CÍVIL</span></h2>
+                    <p>A MH Engenharia é uma empresa de engenharia especializada em soluções inovadoras e eficientes para projetos de construção, infraestrutura e desenvolvimento sustentável. Com uma equipe altamente qualificada e comprometida, entregamos resultados que aliam tecnologia, segurança e excelência técnica.
+                    <span>Nosso compromisso é transformar desafios em soluções inteligentes, garantindo qualidade, prazos e a máxima satisfação dos nossos clientes. Seja para projetos residenciais, comerciais ou industriais, estamos prontos para oferecer as melhores soluções em engenharia.</p></span>
+                </div>
+                <div class="imagem-sobre">
+                    <img src="Images/obras-sobre.jpg" alt="Mulher em uma obra">
+                </div>
             </div>
-        </section>
+            <a href="#servicos"><button class="btn-sobre">Conheça nossos serviços <i class="bi bi-arrow-down"></i></button></a>
+        </div>
+        
+        <div class="section servicos" id="servicos">
+
+            <div class="servicos-txt">
+                <h2>PROJETAMOS, CONSTRUÍMOS E TRANFORMAMOS!</h2>
+            </div>   
+            <div class="servicos-carrosel">
+                <button class="especialidades">
+                    <i class="bi bi-house"></i>
+                    <h2>Projetos</h2>
+                    <p>Utilizamos a metodologia BIM (Building Information Modeling) para criar projetos inteligentes e integrados. Com modelagem 3D e dados precisos, garantimos mais eficiência, redução de erros e otimização de tempo e custos em todas as etapas da construção.</p>
+                </button>
+                <button class="especialidades">
+                    <i class="bi bi-building"></i>
+                    <h2>Construção</h2>
+                    <p>xecutamos obras com precisão, segurança e eficiência, garantindo qualidade em cada detalhe. Com tecnologia avançada e gestão inteligente, entregamos construções duráveis, sustentáveis e alinhadas às suas necessidades.</p>
+                </button>
+                <button class="especialidades">
+                    <i class="bi bi-wrench"></i>
+                    <h2>Reformas</h2>
+                    <p>Renovamos ambientes com qualidade e agilidade, adaptando-os às suas necessidades e estilo. Utilizando técnicas modernas e materiais de excelência, garantimos que sua reforma seja eficiente, sem surpresas e com resultados duradouros.</p>
+                </button>
+            </div>
+            
+        </div>
+
+
 
     </div>
 
+    
 
-<!--SCRIPT  MENU MOBILE-->
-    <script src="menuMobile.js"></script>
-    <script src="menucolor.js"></script>
+
+    
+    <script src="efeitohover.js"></script>
 </body>
 </html>

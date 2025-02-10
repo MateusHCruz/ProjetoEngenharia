@@ -1,0 +1,387 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserat';
+}
+
+@font-face {
+    font-family: 'Montserat';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+html, body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(255, 255, 255, 0)) ,url('Images/image.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 8vh;
+    width: 100%;
+
+    position: fixed;
+    
+    margin-bottom: 4rem;
+    padding: 40px;
+
+    background-color: #113151;
+    z-index: 2;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+
+    justify-self: start;
+
+    margin-top: 2rem;
+}
+
+
+header ul{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: end;
+    gap: 2.5rem;
+
+    
+}
+
+header ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+    cursor: pointer; 
+}
+
+header ul a li{
+    padding: 15px;
+
+    border-radius: 13px;
+
+    transition: 0.3s ease-in-out;
+}
+
+header ul a li:hover{
+    background-color: #2a6db0;
+}
+
+header .icones-redes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+header .icones-redes i{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+header .icones-redes i:hover{
+    color: #2a6db0;
+}
+
+main.home-main{
+    padding: 10%;
+    padding-top: 15%;
+}
+
+.home-main h1{ 
+    color: white;
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.home-main h1 span{
+    display: block;
+    font-weight: bold;
+}
+
+.home-main p{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0.7rem;
+}
+
+.home-main button{
+    color: white;
+    background-color: transparent;
+    padding: 30px;
+    font-size: 16px;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.home-main button:hover{
+    transform: scale(1.02);
+    background-color: #113151;
+   border:none;
+
+}
+
+
+.sobre{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 3rem;
+    max-width: 100%;
+}
+
+
+
+.sobre-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.sobre .sobre-txt h3{
+    align-self: center;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: #00315f;
+    
+    padding: 10px;
+
+    border-left: 3px solid #e09706;
+    margin-bottom: 1rem;
+}
+
+.sobre .sobre-txt h2{
+    font-size: 55px;
+    font-weight: 350;
+    color: #2B5279;
+    margin-bottom: 1.5rem;
+}
+
+.sobre .sobre-txt h2 span{
+    display: block;
+
+    font-weight: bold;
+}
+
+.sobre .sobre-txt p{
+    font-size: 17px;
+
+    color: #525252;
+
+    padding-left: 25px;
+    padding-block: 15px;
+
+    border-left: 3px solid #e09706;
+}
+
+.sobre .sobre-txt p span{
+    display: block;
+    margin-top: 2.5rem;
+}
+
+.sobre img{
+    width: 570px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 0 #00315f;
+    margin-top: 20%;
+   
+}
+
+.primario{
+    display: flex;
+    padding-top: 8%;
+     justify-content: center;
+    width: 100%;
+    
+    
+    gap: 3rem;
+    max-width: 100%;
+}
+
+.sobre button{
+    margin-top: 1rem;
+    width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2a6db0;
+    color: #ffffff;
+    font-size: 20px;
+   
+    position: relative;
+    z-index: 1;
+}
+
+.sobre button::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #012f5a;
+    z-index: -1;
+    border-radius: 15px;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.4s ease-in-out;
+}
+
+.sobre button:hover::before{
+    transform-origin: top;
+    transform: scale(1)
+}
+
+
+
+@media screen and (max-width:1200px){
+    .sobre .sobre-txt h3{
+        font-size: 20px;
+    }
+    .sobre .sobre-txt h2{
+        font-size: 35px;
+    }
+    .sobre .sobre-txt p{
+        font-size: 16px;
+    }
+    .sobre img{
+        width: 450px;
+    }
+}
+
+.servicos{
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    
+    padding-top: 6%;
+}
+
+.servicos .servicos-txt h2{
+    align-items: center;
+    color: #00315f;
+    border-bottom: 1px solid #e09706;
+    padding: 7px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.servicos .servicos-carrosel{
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+}
+
+.servicos .servicos-carrosel .especialidades{
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+    border: none;
+    position: relative;
+    text-align: left;
+    z-index: 4;
+    transition: 1s  ease-in-out;
+}
+
+.especialidades::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #012f5a;
+    z-index: -1;
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.4s ease-in-out;
+}
+
+.especialidades:hover::before{
+    transform-origin: left;
+    transform: scale(1);
+}
+
+
+.especialidades:hover i{
+    color: #e09706 !important;
+}
+
+.especialidades:hover h2{
+    color: rgb(255, 255, 255) !important;
+}
+
+.especialidades:hover p{
+    color: rgb(255, 255, 255) !important;
+}
+
+.servicos .servicos-carrosel .especialidades i{
+    font-size: 40px;
+    color: #00315f;
+}
+
+.servicos .servicos-carrosel .especialidades h2{
+    font-size: 40px;
+    color: #00315f;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicos .servicos-carrosel .especialidades p{
+    color: #525252;
+    font-size: 12px;
+    
+}
+
+@media screen and (max-width:1200px){
+    .servicos .servicos-txt h2{
+        font-size: 26px;
+    }
+
+    .servicos .servicos-carrosel .especialidades{
+        transform: scale(0.8);
+    }
+
+    .servicos .servicos-carrosel{
+        gap: 1px;
+    }
+
+    .servicos{
+        gap: 3rem;
+    }
+}
+
