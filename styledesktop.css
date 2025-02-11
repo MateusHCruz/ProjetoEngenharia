@@ -218,7 +218,7 @@ main.home-main{
 
 .primario{
     display: flex;
-    padding-top: 8%;
+    padding-top: 6rem;
      justify-content: center;
     width: 100%;
     
@@ -286,7 +286,7 @@ main.home-main{
     flex-direction: column;
     gap: 6rem;
     
-    padding-top: 6%;
+    padding-top: 6rem;
 }
 
 .servicos .servicos-txt h2{
