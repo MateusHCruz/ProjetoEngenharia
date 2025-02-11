@@ -147,7 +147,8 @@ main.home-main{
 
 
 .sobre{
-    height: 100vh;
+    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -279,7 +280,6 @@ main.home-main{
 }
 
 .servicos{
-    height: 100vh;
     display: flex;
     
     align-items: center;
