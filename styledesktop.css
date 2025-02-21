@@ -146,7 +146,6 @@ main.home-main{
 
 }
 
-
 /*SOBRE */
 
 .sobre{
@@ -633,3 +632,163 @@ input::placeholder{
     
 }
 
+.main-footer{
+    padding-block: 70px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    height: 30vh;
+}
+
+.main-footer .conteudo-footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.main-footer img{
+    width: 160px;
+    margin-top: 65px;
+}
+
+.main-footer .linha-footer{
+    height: 100%;
+    width: 2px;
+    background-color: #e1e1e1ba;
+    margin-right: 40px;
+    
+}
+
+.icones-footer{
+    display: flex;
+    gap: 20px;
+}
+
+.icones-footer i{
+    color: white;
+    font-size: 24px;
+    transition: 0.5s ease-in-out;
+}
+
+.icones-footer i:hover{
+    color: #3d91e6;
+    
+}
+
+.main-footer a {
+    text-decoration: none;
+    color:white;
+    margin-right:20px;
+    position: relative;
+}
+
+.links-footer a::after{
+    content: " ";
+    width: 0%;
+    height: 1.7px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 104%;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.links-footer a:hover::after{
+    width: 100%;
+}
+
+.rodape{
+    background-color: #134d88;
+    
+    
+}
+
+.rodape h2{
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #042b52;
+    padding: 15px;
+}
+
+.rodape h2 a{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+
+/* TABLET VERSION */
+
+@media screen and (max-width:1000px){
+   /* main */
+.home-main{
+    margin-top: 150px;
+}
+   
+
+    /* sobre */
+    .sobre{
+        padding-inline: 60px;
+    }
+    
+    .texto-sobre h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+
+    .texto-sobre p{
+        font-size: 12px;
+    }
+    .mini-card-sobre i{
+        font-size: 24px;
+        height: 100%;
+    }
+
+    .mini-card-sobre h2{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* servicos*/
+    .servicos-texto h2{
+        font-size: 27px;
+    }
+
+    .servicos{
+        padding-inline: 60px;
+    }
+    .linha2 .servicos-texto{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .linha2 .servicos-texto h2{
+        font-size: 18px;
+    }
+
+     /* proejeto */
+    .projeto{
+        padding: 60px;
+    }
+    .celula-texto-projeto h2{
+        font-size: 25px;
+    }
+
+    .image-projeto{width: 100%;}
+
+     /* formulario contato */
+     .contato-secao{
+        padding: 60px;
+     }
+     form{
+        width: 100%;
+     }
+}
