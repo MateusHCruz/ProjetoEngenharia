@@ -204,13 +204,17 @@ main.home-main{
     display: inline;
 }
 
+
 .texto-cima h2{
     color: #2a6db0;
     font: 30px;
+    writing-mode: vertical-rl;
+    margin-bottom: 10px;
 }
 
 .texto-cima p{
     color: rgb(140, 140, 140);
+    writing-mode: vertical-rl;
 }
 
 .texto-sobre{
@@ -734,6 +738,9 @@ input::placeholder{
    
 
     /* sobre */
+    .imagem-sobre{
+        height: 80vh;
+    }
     .sobre{
         padding-inline: 60px;
     }
@@ -769,6 +776,9 @@ input::placeholder{
     .linha2 .servicos-texto{
         width: 100%;
         margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .linha2 .servicos-texto h2{
         font-size: 18px;
