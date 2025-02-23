@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserat';
+}
+
+@font-face {
+    font-family: 'Montserat';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+/* HEADER */
+
+#fullpage{
+    height: 100%;
+    padding-inline: 30px;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: #113151;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    padding-left: 40px;
+}
+
+.nav-bar img{
+    height: 40px;
+    
+}
+
+.menu-burguer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2px;
+    position: fixed;
+    right: 10%;
+    top: 4.5%;
+}
+
+.linha1-menu{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.linha2-menu{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menumobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #113151;
+    padding-inline: 40px;
+    padding-top: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-itens{
+    list-style: none;
+    margin-bottom: 200px;
+}
+
+.nav-itens a{
+    text-decoration: none;
+}
+.nav-itens li {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.nav-itens li:hover{
+    transform: scale(1.02);
+   transform: translateY(-3px);
+}
+
+.icones-redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    margin-right: 20px;
+    cursor: pointer;  
+    
+}
